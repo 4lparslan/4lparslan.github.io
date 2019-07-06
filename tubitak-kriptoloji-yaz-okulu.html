@@ -1,223 +1,329 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
+
 <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Tübitak Kriptoloji Yaz Okulu</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<title>Tübitak Kriptoloji Yaz Okulu</title>
 
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CMuli:400,700" rel="stylesheet">
 
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
 
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 
-    <!-- favicons
-    ================================================== -->
-    
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
 
 </head>
 
-<body class="ss-bg-white">
+<body>
+	<!-- HEADER -->
+	<header id="header">
+		<!-- NAV -->
+		<div id="nav">
+			<!-- Top Nav -->
+			<div id="nav-top">
+				<div class="container">
+					<!-- social -->
+					<ul class="nav-social">
+						<li><a href="https://github.com/4lparslan" target="_blank"><img src="./img/git.png"></i></a></li>
+					</ul>
+					<!-- /social -->
 
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader" class="dots-fade">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
+					<!-- logo -->
+					<div class="nav-logo">
+						<a href="index.html" class="logo"><img src="./img/logo.png" alt=""></a>
+					</div>
+					<!-- /logo -->
 
-    <div id="top" class="s-wrap site-wrapper">
+					<!-- search & aside toggle -->
+					<div class="nav-btns">
+						<a href="tubitak-kriptoloji-yaz-okulu-en.html">English</a>
+						<button class="aside-btn"><i class="fa fa-bars"></i></button>
+						
+						
+					</div>
+					<!-- /search & aside toggle -->
+				</div>
+			</div>
+			<!-- /Top Nav -->
 
-        <!-- site header
-        ================================================== -->
-        <header class="s-header header">
+			<!-- Main Nav -->
+			<div id="nav-bottom">
+				<div class="container">
+					<!-- nav -->
+					<ul class="nav-menu">
+						<li class="has-dropdown">
+							<a href="#">Menü</a>
+							<div class="dropdown">
+								<div class="dropdown-body">
+									<ul class="dropdown-list">
+										<li><a href="#">Son Yazılar</a></li>
+										<li><a href="#">Hakkımda</a></li>
+										<li><a href="#">İletişim</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="has-dropdown megamenu">
+							<a href="#">Kategoriler</a>
+							<div class="dropdown">
+								<div class="dropdown-body">
+									<!--
+									<div class="row">
+										<div class="col-md-3">
+											<h4 class="dropdown-heading">Categories</h4>
+											<ul class="dropdown-list">
+												<li><a href="#">Lifestyle</a></li>
+												<li><a href="#">Fashion</a></li>
+												<li><a href="#">Technologyy</a></li>
+												<li><a href="#">Health</a></li>
+												<li><a href="#">Travel</a></li>
+											</ul>
+										</div>
+										<div class="col-md-3">
+											<h4 class="dropdown-heading">Lifestyle</h4>
+											<ul class="dropdown-list">
+												<li><a href="#">Lifestyle</a></li>
+												<li><a href="#">Fashion</a></li>
+												<li><a href="#">Health</a></li>
+											</ul>
+											<h4 class="dropdown-heading">Technology</h4>
+											<ul class="dropdown-list">
+												<li><a href="#">Lifestyle</a></li>
+												<li><a href="#">Travel</a></li>
+											</ul>
+										</div>
+										<div class="col-md-3">
+											<h4 class="dropdown-heading">Fashion</h4>
+											<ul class="dropdown-list">
+												<li><a href="#">Fashion</a></li>
+												<li><a href="#">Technology</a></li>
+											</ul>
+											<h4 class="dropdown-heading">Travel</h4>
+											<ul class="dropdown-list">
+												<li><a href="#">Lifestyle</a></li>
+												<li><a href="#">Healtth</a></li>
+												<li><a href="#">Fashion</a></li>
+											</ul>
+										</div>
+										<div class="col-md-3">
+											<h4 class="dropdown-heading">Health</h4>
+											<ul class="dropdown-list">
+												<li><a href="#">Technology</a></li>
+												<li><a href="#">Fashion</a></li>
+												<li><a href="#">Health</a></li>
+												<li><a href="#">Travel</a></li>
+											</ul>
+										</div>
+									</div>
+									-->
+								</div>
+							</div>
+						</li>
 
-            <div class="header__top">
-                <div class="header__logo">
-                    <a class="site-logo" href="index.html">
-                        <img src="images/logo.png" alt="Homepage">
-                    </a>
-                </div>
+					</ul>
+					<!-- /nav -->
+				</div>
+			</div>
+			<!-- /Main Nav -->
 
-                
+			<!-- Aside Nav -->
+			<div id="nav-aside">
+				<ul class="nav-aside-menu">
+					<li><a href="index.html">Anasayfa</a></li>
+					<li class="has-dropdown"><a>Kategoriler</a>
+						<ul class="dropdown">
+							<li><a href="#">Programlama</a></li>
+							<li><a href="#">Siber Güvenlik</a></li>
+							<li><a href="#">Kamp-Eğitim</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Hakkımda</a></li>
+					<li><a href="#">İletişim</a></li>
+				</ul>
+				<button class="nav-close nav-aside-close"><span></span></button>
+			</div>
+			<!-- /Aside Nav -->
+		</div>
+		<!-- /NAV -->
 
-                <!-- toggles -->
-                
-                
+		<!-- PAGE HEADER -->
+		<div id="post-header" class="page-header">
+			<div class="page-header-bg" style="background-image: url('./img/tubitak.jpeg');" data-stellar-background-ratio="0.5"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10">
+						<div class="post-category">
+							<a href="#0">Kriptoloji </a> <a href="#0">Kamp-Eğitim</a>
+						</div>
+						<h1>Nedir Bu Kriptoloji Yaz Okulu?</h1>
+						<ul class="post-meta">
+							<li><a href="about.html">Alparslan İdrİs Arslan</a></li>
+							<li>6 Temmuz, 2019</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /PAGE HEADER -->
+	</header>
+	<!-- /HEADER -->
 
-            </div>
+	<!-- section -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<div class="col-md-8">
+					
 
-            <nav class="header__nav-wrap">
-
-                <ul class="header__nav">
-                    <li><a href="index.html" title="">Anasayfa</a></li>
-                    <li class="has-children">
-                        <a href="#0" title="">Konular</a>
-                        <ul class="sub-menu">
-                        <li><a href="category.html">Siber Güvenlik</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li><a href="page-about.html" title="">Hakkımda</a></li>
-                </ul> <!-- end header__nav -->
-
-                
-
-            </nav> <!-- end header__nav-wrap -->
-
-        </header> <!-- end s-header -->
-
-
-        <!-- site content
-        ================================================== -->
-        <div class="s-content content">
-            <main class="row content__page">
-                
-                <article class="column large-full entry format-standard">
-
-                    <div class="media-wrap entry__media">
-                        <div class="entry__post-thumb">
-                            <img src="images/thumbs/single/standard/tubitak-1000.jpg" 
-                                 srcset="images/thumbs/single/standard/tubitak-2000.jpg 2000w, 
-                                         images/thumbs/single/standard/tubitak-1000.jpg 1000w, 
-                                         images/thumbs/single/standard/tubitak-500.jpg 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt="">
-                        </div>
-                    </div>
-
-                    <div class="content__page-header entry__header">
-                        <h1 class="display-1 entry__title">
-                        Nedir Bu Kriptoloji Yaz Okulu?
-                        </h1>
-                        <ul class="entry__header-meta">
-                            <li class="author"><a href="page-about.html">Alparslan İdris Arslan</a></li>
-                            <li class="date">5 Temmuz, 2019</li>
-                            <li class="cat-links">
-                                <a href="#0">Kriptoloji</a><a href="#0">Kamp-Eğitim</a>
-                            </li>
-                        </ul>
-                    </div> <!-- end entry__header -->
-
-                    <div class="entry__content">
-
-                        <p class="lead drop-cap">
-                        Merhabalar.Bu yazımda TÜBİTAK BİLGEM UEKAE tarafından düzenlenen Kriptoloji Yaz Okulu'ndan bahsedeceğim. 23 Haziranda Gebze'de gerçekleşen beş günlük kampta hem eğlendim, hem öğrendim. Sürprizlerle ve yarışmalarla dolu bu etkinliğe siz de kesinlikle katılmalısınız.
-                        </p>
-
-                        <p>
-                        36 kişilik bir öğrenci topluluğu ve alanında uzman eğitmenlerle; acaba şimdi bizi ne bekliyor havasında dolu dolu bir eğitimdi. Emeği geçen herkese teşekkür ederim.
-                        </p>
-
-                        <p>Kriptolojinin temellerinden günümüze birçok teknik gösterildi. Önce Sezar, Vigenere tadında eğlenirken sonralarında RSA, AES vb. algoritmalarla tanışınca matematiğin gücüne bir kez daha tanık oldum.</p>
-
-                        <p>
-                        <img src="images/enigma-1000.jpg" 
-                             srcset="images/enigma-2000.jpg 2000w, 
-                                     images/enigma-1000.jpg 1000w, 
-                                     images/enigma-500.jpg 500w" 
-                                     sizes="(max-width: 2000px) 100vw, 2000px" alt="enigma-makinesi">
-                        </p>
-
-    
-                        <p>
-                        Enigma makinesinin çalışma mantığını öğrenince hayrete düştüm (Alan Turing’e selam olsun) ve böylesi bir algoritmanın kırılmasının çok zor olduğuna inanırken (Yaklaşık 2<sup>76</sup> farklı kombinasyon var. DES için anahtar kümesi ise 2<sup>56</sup> idi :) bu sır kutusunun çeşitli hata ve insan zaafları yüzünden ifşa edilip en sonunda patlatıldığını öğrendim. Ne olursa olsun “hiçbir sistem güvenli değildir.” öyle değil mi? <a href="http://enigma.louisedade.co.uk/howitworks.html">Enigma</a>yı başka bir yazıda inceleyeceğim.
-                        </p>
-    
-                        <blockquote>
-                            <p>
-                            Bazen kimsenin hayal edemediklerini, kimsenin hayal edemediği insanlar gerçekleştirir.
-                            </p>
-                            <cite>Alan Turing</cite>
-                        </blockquote>
-    
-                        <p>
-                        Simetrik ve asimetrik şifreleme gösterildi; blockchain, kablosuz ağ saldırıları, kriptografik protokoller, steganografi, sayısal damgalama ve daha birçok konuya 
-                        ilişkin bilgi verildi.
-                        </p>
-    
-                        <p>
-                        Hazine Avı yarışmasında 6 farklı grup verilen questleri en kısa sürede yapmaya çalıştı. Fakat bir sonraki questi alabilmek için yapılması gereken bundan daha fazlasıydı :)
-                        </p>
-
-                        <p>Ayrıca yine takımların tasarladığı şifreleme algoritmaları birbiriyle kıyasıya yarıştı. En yaratıcı ve dayanıklı algoritmayı üretmek için herkes gecesini
-                        gündüzüne kattı. Kazanan takım tabii ki hakettiğini aldı. Bizim takım (Kardeşler Kripto A.Ş.) kazanamadı ama olsun :)) Buradan takım arkadaşlarıma selamlar.</p>
-
-                        <p>
+					<!-- post content -->
+					<div class="section-row">
+						<p>Merhabalar.Bu yazımda TÜBİTAK BİLGEM UEKAE tarafından düzenlenen Kriptoloji Yaz Okulu'ndan bahsedeceğim. 23 Haziranda Gebze'de gerçekleşen beş günlük kampta hem eğlendim, hem öğrendim. Sürprizlerle ve yarışmalarla dolu bu etkinliğe siz de kesinlikle katılmalısınız.</p>
+						<p>36 kişilik bir öğrenci topluluğu ve alanında uzman eğitmenlerle; acaba şimdi bizi ne bekliyor havasında dolu dolu bir eğitimdi. Emeği geçen herkese teşekkür ederim.</p>
+						<p>Kriptolojinin temellerinden günümüze birçok teknik gösterildi. Önce Sezar, Vigenere tadında eğlenirken sonralarında RSA, AES vb. algoritmalarla tanışınca matematiğin gücüne bir kez daha tanık oldum.</p>
+						<figure class="pull-right">
+							<img src="./img/enigma.jpg" alt="">
+							<figcaption>Meşhur enigma makinesi</figcaption>
+						</figure>
+						<p>Enigma makinesinin çalışma mantığını öğrenince hayrete düştüm (Alan Turing’e selam olsun) ve böylesi bir algoritmanın kırılmasının çok zor olduğuna inanırken (Yaklaşık 2<sup>76</sup> farklı kombinasyon var. DES için anahtar kümesi ise 2<sup>56</sup> idi :) bu sır kutusunun çeşitli hata ve insan zaafları yüzünden ifşa edilip en sonunda patlatıldığını öğrendim. Ne olursa olsun “hiçbir sistem güvenli değildir.” öyle değil mi? <a href="http://enigma.louisedade.co.uk/howitworks.html">Enigma</a>yı başka bir yazıda inceleyeceğim.</p>
+						<blockquote class="blockquote">
+							<p>Bazen kimsenin hayal edemediklerini, kimsenin hayal edemediği insanlar gerçekleştirir.</p>
+							<footer class="blockquote-footer">Alan Turing</footer>
+						</blockquote>
+						<p>Simetrik ve asimetrik şifreleme gösterildi; blockchain, kablosuz ağ saldırıları, kriptografik protokoller, steganografi, sayısal damgalama ve daha birçok konuya ilişkin bilgi verildi.</p>
+						<p>Hazine Avı yarışmasında 6 farklı grup verilen questleri en kısa sürede yapmaya çalıştı. Fakat bir sonraki questi alabilmek için yapılması gereken bundan daha fazlasıydı :)</p>
+						<p>Ayrıca yine takımların tasarladığı şifreleme algoritmaları birbiriyle kıyasıya yarıştı. En yaratıcı ve dayanıklı algoritmayı üretmek için herkes gecesini gündüzüne kattı. Kazanan takım tabii ki hakettiğini aldı. Bizim takım (Kardeşler Kripto A.Ş.) kazanamadı ama olsun :)) Buradan takım arkadaşlarıma selamlar.</p>
+						<p>
                         Kamp sonunda, TÜBİTAK Başkanı Hasan Mandal'ın katılımıyla sertifikalarımızı aldık. Keşke hiç bitmeseydi dediğim beş günlük maceramın ayrıntılarına ve öğrendiklerime sonraki yazılarımda değineceğim. Hoşçakalın!
                         </p>
+					</div>
+					<!-- /post content -->
+
+					<!-- post tags -->
+					<div class="section-row">
+						<div class="post-tags">
+							<ul>
+								<li></li>>>>
+								<li><a href="#">Kriptoloji</a></li>
+								<li><a href="#">Kamp-Eğitim</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- /post tags -->
+
+					
+
+					
+
+					
+
+							
+
+					
+
+				</div>
+				<div class="col-md-4">
+					
+
+					
+
+					
+
+					
 
 
-                        <p class="entry__tags">
-                            <span>Bazı etiketler</span>
-        
-                            <span class="entry__tag-list">
-                                <a href="#0">kriptoloji</a>
-                                <a href="#0">siber güvenlik</a>
-                                <a href="#0">kamp</a>
-                                <a href="#0">blockchain</a>
-                            </span>
-            
-                        </p>
-                    </div> <!-- end entry content -->
+					
 
-                    <div class="entry__pagenav">
-                        <div class="entry__nav">
-                            
-                            <div class="entry__next">
-                                <a href="#0" rel="next">
-                                    <span>Next Post</span>
-                                     
-                                </a>
-                            </div>
-                        </div>
-                    </div> <!-- end entry__pagenav -->
+					
+				</div>
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /SECTION -->
 
-                </article> <!-- end column large-full entry-->
+	<!-- FOOTER -->
+	<footer id="footer">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<div class="col-md-3">
+					<div class="footer-widget">
+						<div class="footer-logo">
+							<a href="index.html" class="logo"><img src="./img/logo-alt.png" alt=""></a>
+						</div>
+						<ul class="contact-social">
+							<li><a target="_blank" href="https://github.com/4lparslan" class="social-facebook"><i class="fa fa-github" ></i></a></li> -> Github Sayfam
+						</ul>
+					</div>
+				</div>
+				
+				<div class="col-md-3">
+					<div class="footer-widget">
+						<div class="tags-widget">
+							<ul>
+								<li><a href="#">Programlama</a></li>
+								<li><a href="#">Sızma Testi</a></li>
+								<li><a href="#">Kriptoloji</a></li>
+								<li><a href="#">Siber Güvenlik</a></li>
+								<li><a href="#">Teknoloji</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!-- /row -->
 
+			<!-- row -->
+			<div class="footer-bottom row">
+				<div class="col-md-6 col-md-push-6">
+					<ul class="footer-nav">
+						<li><a href="index.html">Anasayfa</a></li>
+						<li><a href="#">Hakkımda</a></li>
+						<li><a href="#">İletişim</a></li>
+					</ul>
+				</div>
+				<div class="col-md-6 col-md-pull-6">
+					-Alparslan İdris Arslan-
+					<div class="footer-copyright">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</div>
+				</div>
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</footer>
+	<!-- /FOOTER -->
 
-               
-            </main>
-
-        </div> <!-- end s-content -->
-
-
-        <!-- footer
-        ================================================== -->
-        <footer class="s-footer">
-            <div class="row">
-                <div class="column large-full footer__content">
-                    <div class="footer__copyright">
-                        <span>Alparslan İdris Arslan | 2019</span> 
-                    </div>
-                </div>
-            </div>
-
-            <div class="go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top"></a>
-            </div>
-        </footer>
-
-    </div> <!-- end s-wrap -->
-
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+	<!-- jQuery Plugins -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
+
+</html>
