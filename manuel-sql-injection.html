@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>Tübitak Kriptoloji Yaz Okulu</title>
+	<title>Manuel SQL Injection</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CMuli:400,700" rel="stylesheet">
@@ -52,7 +52,7 @@
 
 					<!-- search & aside toggle -->
 					<div class="nav-btns">
-						<a href="tubitak-kriptoloji-yaz-okulu-en.html">English</a>
+						<a href="index-en.html">English</a>
 						<button class="aside-btn"><i class="fa fa-bars"></i></button>
 						
 						
@@ -164,17 +164,17 @@
 
 		<!-- PAGE HEADER -->
 		<div id="post-header" class="page-header">
-			<div class="page-header-bg" style="background-image: url('./img/tubitak.jpeg');" data-stellar-background-ratio="0.5"></div>
+			<div class="page-header-bg" style="background-image: url('./img/sqlInjection.jpg');" data-stellar-background-ratio="0.5"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10">
 						<div class="post-category">
-							<a href="#0">Kriptoloji </a> <a href="#0">Kamp-Egitim</a>
+							<a href="#">siber güvenlik </a><a href="#"> sızma testi</a>
 						</div>
-						<h1>Nedir Bu Kriptoloji Yaz Okulu?</h1>
+						<h1>Manuel SQL Injection</h1>
 						<ul class="post-meta">
-							<li><a href="about.html">Alparslan İdrİs Arslan</a></li>
-							<li>6 Temmuz, 2019</li>
+							<li><a href="author.html">Alparslan İdrİs Arslan</a></li>
+							<li>16 Temmuz 2019</li>
 						</ul>
 					</div>
 				</div>
@@ -195,24 +195,85 @@
 
 					<!-- post content -->
 					<div class="section-row">
-						<p>Merhabalar. Bu yazımda TÜBİTAK BİLGEM UEKAE tarafından düzenlenen Kriptoloji Yaz Okulu'ndan bahsedeceğim. 23 Haziranda Gebze'de gerçekleşen beş günlük kampta hem eğlendim, hem öğrendim. Sürprizlerle ve yarışmalarla dolu bu etkinliğe siz de kesinlikle katılmalısınız.</p>
-						<p>36 kişilik bir öğrenci topluluğu ve alanında uzman eğitmenlerle; acaba şimdi bizi ne bekliyor havasında dolu dolu bir eğitimdi. Emeği geçen herkese teşekkür ederim.</p>
-						<p>Kriptolojinin temellerinden günümüze birçok teknik gösterildi. Önce Sezar, Vigenere tadında eğlenirken sonralarında RSA, AES vb. algoritmalarla tanışınca matematiğin gücüne bir kez daha tanık oldum.</p>
-						<figure class="pull-right">
-							<img src="./img/enigma.jpg" alt="">
-							<figcaption>Meşhur enigma makinesi</figcaption>
+						<h3>SQL Injection ne demek, manuel olması ne anlama geliyor?</h3>
+						<p>Veritabanına bağlı çalışan web uygulamalarına yönelik bir atak türü olup, birkaç çeşidi vardır:</p>
+						<ul class="list-style">
+							<li>Union Based</li>
+							<li>Error Based</li>
+							<li>Blind
+							<ul class="list-style" style="list-style-type: circle">
+								<li>Boolean Based</li>
+								<li>Time Based</li>
+							</ul>
+							</li>
+						</ul>
+						<p>SQL-I, SQL sorgusuna müdahale etme yoluyla zafiyeti sömürme işlemidir. Kimlik doğrulama bypass edilerek veritabanıyla bağlantı kurulur. Veritabanında istenen değişiklikler yapılabilir, veritabanından veri çekilebilir.</p>
+						<p>Linux cihaz üzerinden SQLMap ve daha birçok araç ile otomatize bir şekilde gerçekleştirilebilir.Bu yazıda ise tamamıyla kendimiz; SQL sorgularını birleştirerek, deneme yanılma yoluyla veritabanı hakkında bilgi toplamaya çalışacağız.</p>
+						<h3>Neler gerekli?</h3>
+						<p>Gerekli önlemleri almamış, alınan inputları filtrelememiş bir PHP site işimizi görür. Ben bu yazımda, <a target="_blank" href="https://www.aucyberclub.org/">AUCC</a> eğitimlerinde bize sunulan lab üzerinden anlatım yapacağım. Lab, MySQL sunucuya bağlı olarak çalışıyor. Test lab için <a target="_blank" href="http://www.dvwa.co.uk/">şu </a>siteyi kullanabilirsiniz. Sonraki yazılarımda DVWA üzerine saldırılardan bahsedeceğim. Ayrıca, yapılan işlemleri daha iyi kavramak adına SQL dilinin çalışma mantığı <a target="_blank" href="https://www.w3schools.com/sql/">şuradan</a> incelenebilir.</p>
+						<h3>Başlıyoruz</h3>
+						<p>Öncelikle anasayfaya geliyoruz.</p>
+						<figure>
+							<code>sqli.hackeregitim.com/index.php</code>
 						</figure>
-						<p>Enigma makinesinin çalışma mantığını öğrenince hayrete düştüm (Alan Turing’e selam olsun) ve böylesi bir algoritmanın kırılmasının çok zor olduğuna inanırken (Yaklaşık 2<sup>76</sup> farklı kombinasyon var. DES için anahtar kümesi ise 2<sup>56</sup> idi :) bu sır kutusunun çeşitli hata ve insan zaafları yüzünden ifşa edilip en sonunda patlatıldığını öğrendim. Ne olursa olsun “hiçbir sistem güvenli değildir.” öyle değil mi? <a href="http://enigma.louisedade.co.uk/howitworks.html">Enigma</a>yı başka bir yazıda inceleyeceğim.</p>
-						<blockquote class="blockquote">
-							<p>Bazen kimsenin hayal edemediklerini, kimsenin hayal edemediği insanlar gerçekleştirir.</p>
-							<footer class="blockquote-footer">Alan Turing</footer>
-						</blockquote>
-						<p>Simetrik ve asimetrik şifreleme gösterildi; blockchain, kablosuz ağ saldırıları, kriptografik protokoller, steganografi, sayısal damgalama ve daha birçok konuya ilişkin bilgi verildi.</p>
-						<p>Hazine Avı yarışmasında 6 farklı grup verilen questleri en kısa sürede yapmaya çalıştı. Fakat bir sonraki questi alabilmek için yapılması gereken bundan daha fazlasıydı :)</p>
-						<p>Ayrıca yine takımların tasarladığı şifreleme algoritmaları birbiriyle kıyasıya yarıştı. En yaratıcı ve dayanıklı algoritmayı üretmek için herkes gecesini gündüzüne kattı. Kazanan takım tabii ki hakettiğini aldı. Bizim takım (Kardeşler Kripto A.Ş.) kazanamadı ama olsun :)) Buradan takım arkadaşlarıma selamlar.</p>
-						<p>
-                        Kamp sonunda, TÜBİTAK Başkanı Hasan Mandal'ın katılımıyla sertifikalarımızı aldık. Keşke hiç bitmeseydi dediğim beş günlük maceramın ayrıntılarına ve öğrendiklerime sonraki yazılarımda değineceğim. Hoşçakalın!
-                        </p>
+						<p>Daha sonra, "id=2" benzeri bir ifade içeren URL keşfedene kadar siteyi kurcalıyoruz. Karşımıza şu sayfa geliyor:</p>
+						<figure>
+							<code>sqli.hackeregitim.com/creators.php?name=Huseyin</code>
+						</figure>
+						<p>"name=Huseyin" ifadesi dikkatimizi çekiyor. Şimdi URL sonuna tırnak işareti ekleyerek sözdizimini bozalım ve sayfayı yenileyelim.</p>
+						<figure>
+							<code>sqli.hackeregitim.com/creators.php?name=Huseyin'</code>
+						</figure>
+						<p> Eğer bize aşağıdaki gibi bir hata mesajı döndürürse sitenin zafiyetli olduğunu düşünebiliriz.</p>
+						<figure>
+							<img src="./img/sql1.png">
+						</figure>
+						<p>Şimdi sırada bruteforce var. Sütun sayısını bulmak için 1'den n'ye kadar sayılar yazarak aşağıdaki komutu vermemiz gerekiyor. Sondaki tire işaretleri sözdiziminin sağlanması için ekleniyor.</p>
+						<figure>
+							<code>sqli.hackeregitim.com/creators.php?name=Huseyin' ORDER BY 1,2,3,4,5,5,6,7-- -</code>
+						</figure>
+						<p>Bu denememizde şöyle bir hata ile karşılaşıyoruz.</p>
+						<figure>
+							<img src="./img/sql2.png">
+						</figure>
+						<p>7. sütunun bulunmadığını öğreniyoruz, o halde sayımızı bir eksilterek tekrar deneyelim.</p>
+						<figure>
+							<code>sqli.hackeregitim.com/creators.php?name=Huseyin' ORDER BY 1,2,3,4,5,5,6-- -</code>
+						</figure>
+						<figure>
+							<img src="./img/sql3.png">
+						</figure>
+						<p>Ve bingo! Sayfa normal olarak yüklendi, herhangi bir hata mesajı almadık. 6 sütun bulunduğu bilgisini cebimize koyarak devam ediyoruz.</p>
+						<p>Çoklu seçim yapmak için "union" ifadesini, birçok veriyi birleştirerek bir arada görüntülemek için "concat" fonksiyonunu kullanıyoruz. "information_schema" varsayılan olarak bulunan bir veritabanıdır. Sahip olunan diğer tüm veritabanlarıyla ilgili bilgileri içerir. Dolayısıyla ondan tablo isimlerini istiyoruz. "1,2,3,4,5,6" şeklindeki ifadede "1" yerine fonksiyonumuzu yazarak (Herhangi birisinin yerine yazılabilir.) veritabanının bize istediğimiz sonuçları döndürmesini sağlıyoruz.</p>
+						<p>(Fazla yer kaplamaması için URL'in diğer kısmını yazmayacağım.)</p>
+					 <figure>
+							<code>=Huseyin' union select concat(table_name),2,3,4,5,5,6 from information_schema.tables-- -</code>
+						</figure>
+						<p>Veritabanında bulunan bazı dizi elemanlarını görüntülüyoruz. Bunlar tüm veritabanında mevcut olan tablo isimleri.</p>
+						<figure>
+							<img src="./img/sql4.png">
+						</figure>
+						<p>"users" adında bir tablo adı olduğunu öğreniyoruz, belki işimize yarar.</p>
+						<figure>
+							<img src="./img/sql5.png">
+						</figure>
+						<p>Benzer şekilde, "information_schema" veritabanından sütun isimlerini istiyoruz.</p>
+						<figure>
+							<code>=Huseyin' union select concat(column_name),2,3,4,5,5,6 from information_schema.columns-- -</code>
+						</figure>
+						<p>Tekrar dizi elemanları karşılıyor bizi. Bu sefer de "username" ve "password" adında iki sütun adı olduğunu öğreniyoruz.</p>
+						<figure>
+							<img src="./img/sql6.png">
+						</figure>
+						<p>İşimize yarayabilecek önemli bilgiler büyük ihtimalle "username" ve "password" kolonlarında yer almakta. Son hamleyi yapma vakti. Concat fonksiyonu sayesinde parola ve kullanıcı adını bir arada alacağız. "users" tablosundan "username" ve "password" sütunlarındaki bilgileri istiyoruz.</p>
+						<figure>
+							<code>=Huseyin' union select concat(username," ",password),2,3,4,5,5,6 from users-- -</code>
+						</figure>
+						<p>Ve nihayet kullanıcı adı ve parolayı elde ediyoruz:</p>
+						<figure>
+							<img src="./img/sql7.png">
+						</figure>
+						<p>Karşılaştığım lab senaryosunun SQL Injection kısmı bu şekildeydi. Özetle; SQL diline az çok hakim birisi olarak, URL üzerinde sözdizimi kurallarını suistimal ederek, veritabanındaki bazı kritik tablo ve kolon isimlerini öğrendik. Daha sonra kullanıcı giriş bilgilerini çekerek saldırıyı tamamladık.</p>
 					</div>
 					<!-- /post content -->
 
@@ -221,8 +282,8 @@
 						<div class="post-tags">
 							<ul>
 								<li></li>>>>
-								<li><a href="#">Kriptoloji</a></li>
-								<li><a href="#">Kamp-Egitim</a></li>
+								<li><a href="#">Siber Güvenlik</a></li>
+								<li><a href="#">sızma testi</a></li>
 							</ul>
 						</div>
 					</div>
@@ -233,8 +294,6 @@
 					
 
 					
-
-							
 
 					
 
@@ -286,7 +345,6 @@
 								<li><a href="#">Kriptoloji</a></li>
 								<li><a href="#">Siber Güvenlik</a></li>
 								<li><a href="#">Teknoloji</a></li>
-								<li><a href="#">Kamp-Eğitim</a></li>
 							</ul>
 						</div>
 					</div>
