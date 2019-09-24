@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Temel Linux Komutları</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CMuli:400,700" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header id="header">
+		<!-- NAV -->
+		<div id="nav">
+			<!-- Top Nav -->
+			<div id="nav-top">
+				<div class="container">
+					<!-- social -->
+					<ul class="nav-social">
+						<li><a href="https://github.com/4lparslan" target="_blank"><img src="./img/git.png"></i></a></li>
+					</ul>
+					<!-- /social -->
+
+					<!-- logo -->
+					<div class="nav-logo">
+						<a href="index.html" class="logo"><img src="./img/logo.png" alt=""></a>
+					</div>
+					<!-- /logo -->
+
+					<!-- search & aside toggle -->
+					<div class="nav-btns">
+						<a href="index-en.html">English</a>
+						<button class="aside-btn"><i class="fa fa-bars"></i></button>
+						
+						
+					</div>
+					<!-- /search & aside toggle -->
+				</div>
+			</div>
+			<!-- /Top Nav -->
+
+			<!-- Main Nav -->
+			<div id="nav-bottom">
+				<div class="container">
+					<!-- nav -->
+					<ul class="nav-menu">
+						<li class="has-dropdown">
+							<a href="#">Menü</a>
+							<div class="dropdown">
+								<div class="dropdown-body">
+									<ul class="dropdown-list">
+										<li><a href="#">Son Yazılar</a></li>
+										<li><a href="#">Hakkımda</a></li>
+										<li><a href="#">İletişim</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="has-dropdown megamenu">
+							<a href="#">KATEGORİLER</a>
+							<div class="dropdown">
+								<div class="dropdown-body">
+									
+									<div class="row">
+										<div class="col-md-3">
+											<ul class="dropdown-list">
+												<li><a href="#">PROGRAMLAMA</a></li>
+												<li><a href="#">SIZMA TESTİ</a></li>
+												<li><a href="#">KRİPTOLOJİ</a></li>
+												<li><a href="#">SİBER GÜVENLİK</a></li>
+												<li><a href="#">KAMP-EĞİTİM</a></li>
+												<li><a href="#">WEB GÜVENLİĞİ</a></li>
+												<li><a href="#">TERSİNE MÜHENDİSLİK</a></li>
+												<li><a href="#">AĞ</a></li>
+												<li><a href="#">GNU LİNUX</a></li>
+											</ul>
+										</div>
+										<!--
+										<div class="col-md-3">
+											<h4 class="dropdown-heading">Lifestyle</h4>
+											<ul class="dropdown-list">
+												<li><a href="#">Lifestyle</a></li>
+												<li><a href="#">Fashion</a></li>
+												<li><a href="#">Health</a></li>
+											</ul>
+											<h4 class="dropdown-heading">Technology</h4>
+											<ul class="dropdown-list">
+												<li><a href="#">Lifestyle</a></li>
+												<li><a href="#">Travel</a></li>
+											</ul>
+										</div>
+										<div class="col-md-3">
+											<h4 class="dropdown-heading">Fashion</h4>
+											<ul class="dropdown-list">
+												<li><a href="#">Fashion</a></li>
+												<li><a href="#">Technology</a></li>
+											</ul>
+											<h4 class="dropdown-heading">Travel</h4>
+											<ul class="dropdown-list">
+												<li><a href="#">Lifestyle</a></li>
+												<li><a href="#">Healtth</a></li>
+												<li><a href="#">Fashion</a></li>
+											</ul>
+										</div>
+										<div class="col-md-3">
+											<h4 class="dropdown-heading">Health</h4>
+											<ul class="dropdown-list">
+												<li><a href="#">Technology</a></li>
+												<li><a href="#">Fashion</a></li>
+												<li><a href="#">Health</a></li>
+												<li><a href="#">Travel</a></li>
+											</ul>
+										</div>
+									</div>
+									-->
+								</div>
+							</div>
+						</li>
+
+					</ul>
+					<!-- /nav -->
+				</div>
+			</div>
+			<!-- /Main Nav -->
+
+			<!-- Aside Nav -->
+			<div id="nav-aside">
+				<ul class="nav-aside-menu">
+					<li><a href="index.html">Anasayfa</a></li>
+					<li class="has-dropdown"><a>Kategoriler</a>
+						<ul class="dropdown">
+							<li><a href="#">Programlama</a></li>
+							<li><a href="#">Sızma Testi</a></li>
+							<li><a href="#">Kriptoloji</a></li>
+							<li><a href="#">Siber Güvenlik</a></li>
+							<li><a href="#">Kamp-Eğitim</a></li>
+							<li><a href="#">Web Güvenliği</a></li>
+							<li><a href="#">Tersine Mühendislik</a></li>
+							<li><a href="#">Ağ</a></li>
+							<li><a href="#">GNU Linux</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Hakkımda</a></li>
+					<li><a href="#">İletişim</a></li>
+				</ul>
+				<button class="nav-close nav-aside-close"><span></span></button>
+			</div>
+			<!-- /Aside Nav -->
+		</div>
+		<!-- /NAV -->
+
+		<!-- PAGE HEADER -->
+		<div id="post-header" class="page-header">
+			<div class="page-header-bg" style="background-image: url('./img/matrix.jpg');" data-stellar-background-ratio="0.5"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10">
+						<div class="post-category">
+							<a href="category.html">GNU LINUX</a>
+						</div>
+						<h1>Temel Linux Komutları</h1>
+						<ul class="post-meta">
+							<li><a href="author.html">Alparslan İdrİs Arslan</a></li>
+							<li>24 Eylül 2019</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /PAGE HEADER -->
+	</header>
+	<!-- /HEADER -->
+
+	<!-- section -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<div class="col-md-8">
+					
+
+					<!-- post content -->
+					<div class="section-row">
+						<h2>'help' komutu</h2>
+						<p>Bir komutun yanına --help eklenerek yardım alınabilir. 'man' komutuyla benzerlik gösterir.</p>
+						<figure>
+							<img src="img/linux1.png">
+							<figcaption>grep komutu için help kullanımı</figcaption>
+						</figure>
+						<figure>
+							<img src="img/linux4.png">
+							<figcaption>Komutun Çıktısı</figcaption>
+						</figure>
+						<h2>'man' komutu</h2>
+						<p>'man' komutu, yanına bir başka komut adı yazılarak manual sayfasının açılmasını sağlar. Kullanılan parametreler ve komut hakkında detaylı bilgiler sağlar.</p>
+						<figure>
+							<img src="img/linux3.png">
+							<figcaption>grep komutu için man kullanımı</figcaption>
+						</figure>
+						<figure>
+							<img src="img/linux2.png">
+							<figcaption>Komutun Çıktısı</figcaption>
+						</figure>
+						<h2>'pwd' komutu</h2>
+						<p>Komut çalıştırldığında içinde bulunduğunuz dizini gösterir.</p>
+						<figure>
+							<img src="img/linux5.png">
+							<figcaption>pwd kullanımı</figcaption>
+						</figure>
+						<h2>'cd' komutu</h2>
+						<p>Dizinler arasında geçiş yapmak için kullanılır.</p>
+						<figure>
+							<img src="img/linux6.png">
+							<figcaption>'cd ..' ile önceki dizine geçiş örneği</figcaption>
+						</figure>
+						<figure>
+							<img src="img/linux7.png">
+							<figcaption>bir sonraki dizine geçiş örneği</figcaption>
+						</figure>
+						<h2>'ls' komutu</h2>
+						<p>Bulunulan dizindeki dosya ve klasörleri listeler.</p>
+						<figure>
+							<img src="img/linux8.png">
+							<figcaption>ls kullanımı</figcaption>
+						</figure>
+						<h2>'touch' komutu</h2>
+						<p>Bulunulan dizinde yeni bir metin dosyası oluşturur.</p>
+						<figure>
+							<img src="img/linux9.png">
+							<figcaption>newFile adında dosya oluşturma</figcaption>
+						</figure>
+						<h2>'cat' komutu</h2>
+						<p>Bir dosyanın içeriğinin terminal ekranından okunmasını sağlar. Aynı zamanda bir metin dosyasına yazı eklemek, yazıyı güncellemek için de kullanılır.</p>
+						<figure>
+							<img src="img/linux10.png">
+							<figcaption>Dosya oluşturulur ve yazı varsa üzerine yazılır.</figcaption>
+						</figure>
+						<figure>
+							<img src="img/linux11.png">
+							<figcaption>Yazılı metne ekleme yapılır. [ctrl+D] ile sonlandırılır.</figcaption>
+						</figure>
+						<figure>
+							<img src="img/linux12.png">
+							<figcaption>Dosyanın içeriği görüntülenir.</figcaption>
+						</figure>
+						<h2>'grep' komutu</h2>
+						<p>Dosyalar içerisinde veya bir komutun çıktısında string ararken kullanılır.</p>
+						<ul class="list-style">
+							<li>-v : Aranan kelimeyi içermeyen satırları gösterir.</li>
+							<li>-i : Büyük-küçük harf ayrımı yapmaz.</li>
+							<li>-r : Alt dizinlerde de arama yapar.</li>
+							<li>-n : Aranan kelimenin geçtiği satır numarasını da gösterir.</li>
+							<li>-c : Aradığımız kelimenin kaç kere geçtiğini belirtir.</li>
+						</ul>
+						<figure>
+							<img src="img/linux13.png">
+							<figcaption>'naber' ifadesi verilen dizinde, file dosyasında aranıyor.</figcaption>
+						</figure>
+						<h2>'cp' komutu</h2>
+						<p>Bir dosya veya dizini kopyalar. Format, 'cp KAYNAK HEDEF' şeklindedir. Nokta(.) bulunduğumuz dizini belirtir.</p>
+						<ul class="list-style">
+							<li>-i : Hedef dizinde aynı isimde bir dosya varsa, üzerine yazmadan önce onay ister.</li>
+							<li>-r : Bir dizini kopyalarken kullanılır. Format, 'cp -r dizin1 dizin2' şeklindedir.</li>
+						</ul>
+						<figure>
+							<img src="img/linux14.png">
+							<figcaption>cmatrix.c dosyası, yeni dizine yeniAd.c olarak kopyalanır.</figcaption>
+						</figure>
+						<figure>
+							<img src="img/linux15.png">
+							<figcaption>cmatrix.c dosyası, bulunduğumuz dizine yeni.c olarak kopyalanır.</figcaption>
+						</figure>
+						<h2>'mv' komutu</h2>
+						<p>Dosya veya dizin taşımakta kullanılır. Formatı cp komutu gibidir. Taşıdığımız yerde dosya veya dizin adını değiştirebiliriz.</p>
+						<figure>
+							<img src="img/linux16.png">
+							<figcaption>file dosyası, yeni dizine 'video1' ismi verilerek taşındı.</figcaption>
+						</figure>
+						<h2>'rm' komutu</h2>
+						<p>Dosya veya dizinleri siler. Joker karakterlerden yıldız(*) kullanılarak ortak özellikteki dosyalar silinebilir.</p>
+						<figure>
+							<img src="img/linux17.png">
+							<figcaption>Yan yana yazılarak birden fazla dosya silinebilir.</figcaption>
+						</figure>
+						<figure>
+							<img src="img/linux18.png">
+							<figcaption>Dizinde, '.txt' uzantılı tüm dosyaları siler.</figcaption>
+						</figure>
+						<h2>'mkdir' komutu</h2>
+						<p>Yeni dizin oluşturur.</p>
+						<ul class="list-style">
+							<li>-p : Bir dizini alt dizinleriyle birlikte oluşturur.</li>
+						</ul>
+						<figure>
+							<img src="img/linux20.png">
+						</figure>
+						<figure>
+							<img src="img/linux21.png">
+						</figure>
+						<h2>'chmod' komutu</h2>
+						<p>Linux sistemde dosya ve dizinlere erişim yetkileri kısıtlanabilir. Üç farklı yetki vardır. Bunlar; r(okuma), w(yazma) ve x(çalıştırma) şeklindedir. Bulunduğumuz dizinin içeriğine 'ls -l' komutu ile bakalım.</p>
+						<figure>
+							<img src="img/linux28.png">
+						</figure>
+						<p>Satırların başındaki 'd' dizini, '-' ise dosyayı simgeler. Diğer kısmı üç parçaya ayırırız. Örneğin ikinci satırda, 'rwxr-xr-x' ifadesi şöyle ayrılır: rwx, r-x, r-x. İlk kısım dosya sahibinin yetkilerini, ikinci kısım dosyanın sahibiyle aynı grupta bulunan kullanıcıların yetkilerini, üçüncü kısım ise diğer kullanıcıların yetkilerini ifade eder.</p>
+						<h4>Yetkilerin Değiştirilmesi</h4>
+						<p>Yetkileri sadece root kullanıcı değiştirebilir. 'chmod' komutu ile yapılır. Format şöyledir:</p>
+						<figure>
+							<code>chmod [ugoa] [+-=] [rwx] [Dizin/Dosya]</code>
+						</figure>
+						<ul class="list-style">
+							<li>u(user) : Dosya veya dizin sahibi</li>
+							<li>g(group) : Dosya veya dizin sahibi ile aynı grupta bulunan kullanıcılar</li>
+							<li>o(others) : Diğer kullanıcılar</li>
+							<li>a(all) : Herkes</li>
+							<li>+ : Yetki ekleme</li>
+							<li>- : Yetki çıkarma</li>
+							<li>= : Yetki eşitleme</li>
+						</ul>
+						<h4><u>ÖRNEK-1</u></h4>
+						<figure>
+							<img src="img/linux29.png">
+							<figcaption>newFile dosyasının tüm okuma ve yazma yetkisi kaldırıldı.</figcaption>
+						</figure>
+						<figure>
+							<img src="img/linux30.png">
+							<figcaption>Düşük yetkili kullanıcı engellendi.</figcaption>
+						</figure>
+						<h4><u>ÖRNEK-2</u></h4>
+						<figure>
+							<img src="img/linux31.png">
+							<figcaption>Dosya sahibinin okuma yetkisi kaldırıldı; gruba çalıştırma, diğerlerine yazma yetkisi verildi.</figcaption>
+						</figure>
+						Yetkileri düzenlemek için daha kolay bir format mevcut. Her yetkinin sayısal bir karşılığı bulunmakta:
+						<ul class="list-style" >
+							<li>r=4</li>
+							<li>w=2</li>
+							<li>x=1</li>
+							<p>Bu formata göre; örneğin rx için 4+1=5 rakamı kullanılır veya rwx için 1+2+4=7 kullanılır. Dosya sahibi, grup ve diğerleri için toplamda üç farklı rakam yazılır.</p>
+						</ul>
+						<figure>
+							<img src="img/linux32.png">
+							<figcaption>Tüm kullanıcılara okuma, yazma ve çalıştırma yetkisi vermek</figcaption>
+						</figure>
+						<h2>'apt-get' komutu</h2>
+						<p>Bir uygulama yüklemek için kullanılan temel komut, 'apt-get install ProgramAdı' şeklindedir.</p>
+						<ul class="list-style">
+							<li>'apt-get update' komutu sayesinde sisteminizde kurulu olan paketler, paket deposundaki versiyonları karşılaştırılır ve liste güncellenir.</li>
+							<li>'apt-get upgrade' komutu ile listede bulunan kurulu paketler güncellenir.</li>
+						</ul>
+						<figure>
+							<img src="img/linux25.png">
+							<figcaption>Örnek olarak, gcc compiler kurulumu</figcaption>
+						</figure>
+						<figure>
+							<img src="img/linux26.png">
+							<figcaption>Paket listesini kontrol etmek için 'update' komutu verilir. </figcaption>
+						</figure>
+						<figure>
+							<img src="img/linux27.png">
+							<figcaption>Sistem güncellemesi 'upgrade' komutu ile başlatılır.</figcaption>
+						</figure>
+						<h2>'ifconfig' komutu</h2>
+						<p>IP yapılandırması hakkında bilgilere ulaşmak için kullanılır. IP adresi, MAC adresi, broadcast adresi vb. verilere ulaşılabilir.</p>
+						<figure>
+							<img src="img/linux19.png">
+						</figure>
+						<h2>'ping' komutu</h2>
+						<p>Bir sunucunun ayakta olup olmadığını kontrol etmek için, canlı cihazları tespit etmek için ve genelde cihazımızın internet bağlantısını kontrol etmek için kullanılır. Eğer cihaz yanıt vermiyorsa kapalı olabilir. İki cihaz arasında ki iletişimin hızı gösterilir.</p>
+						<ul class="list-style">
+							<li>-c : Belirli sayıda paket göndermek için kullanılır.</li>
+						</ul>
+						Aşağıdaki örnekte, IP adresine 6 paket gönderildi.
+						<figure>
+							<code>ping -c 6 192.168.1.254</code>
+						</figure>
+						<figure>
+							<img src="img/linux22.png">
+							<figcaption>URL veya IP adresi verilerek ping atılır.</figcaption>
+						</figure>
+						<h2>'sudo' komutu</h3>
+							<p>Bazı komutları çalıştırmak veya bazı dosyalara erişmek için yetkimiz olmayabilir. 'sudo' komutu ile sistemde daha geniş bir yetki elde ederiz. Komut çalıştırıldığında parola istenir.</p>
+							<p>Örneğin kullanıcı parolaları /etc/shadow dizininde şifreli olarak saklanır:</p>
+							<figure>
+								<img src="img/linux23.png">
+							</figure>
+					</div>
+					<!-- /post content -->
+
+					<!-- post tags -->
+					<div class="section-row">
+						<div class="post-tags">
+							<ul>
+								<li></li>>>>
+								<li><a href="#">GNU LINUX</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- /post tags -->
+
+					
+
+					
+
+					
+
+					
+
+				</div>
+				<div class="col-md-4">
+					
+
+					
+
+					
+
+					
+
+
+					
+
+					
+				</div>
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /SECTION -->
+
+	<!-- FOOTER -->
+	<footer id="footer">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<div class="col-md-3">
+					<div class="footer-widget">
+						<div class="footer-logo">
+							<a href="index.html" class="logo"><img src="./img/logo-alt.png" alt=""></a>
+						</div>
+						<ul class="contact-social">
+							<li><a target="_blank" href="https://github.com/4lparslan" class="social-facebook"><i class="fa fa-github" ></i></a></li> -> Github Sayfam
+						</ul>
+					</div>
+				</div>
+				
+				<div class="col-md-3">
+					<div class="footer-widget">
+						<div class="tags-widget">
+							<ul>
+								<li><a href="#">Programlama</a></li>
+								<li><a href="#">Sızma Testi</a></li>
+								<li><a href="#">Kriptoloji</a></li>
+								<li><a href="#">Siber Güvenlik</a></li>
+								<li><a href="#">Teknoloji</a></li>
+								<li><a href="#">Kamp-Eğitim</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!-- /row -->
+
+			<!-- row -->
+			<div class="footer-bottom row">
+				<div class="col-md-6 col-md-push-6">
+					<ul class="footer-nav">
+						<li><a href="index.html">Anasayfa</a></li>
+						<li><a href="#">Hakkımda</a></li>
+						<li><a href="#">İletişim</a></li>
+					</ul>
+				</div>
+				<div class="col-md-6 col-md-pull-6">
+					-Alparslan İdris Arslan-
+					<div class="footer-copyright">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</div>
+				</div>
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</footer>
+	<!-- /FOOTER -->
+
+	<!-- jQuery Plugins -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
